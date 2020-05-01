@@ -17,7 +17,9 @@
 {{- if or .Params.math .Site.Params.math }}
 {{ partial "math.html" . }}
 {{- end }}
-
+{{- if .Site.Params.metas }}
+  {{ partial "meta.html" .Site.Params.metas }}
+{{- end }}
 <body>
 
 <header class="icons">
