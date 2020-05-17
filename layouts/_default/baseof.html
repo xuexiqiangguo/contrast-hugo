@@ -20,6 +20,9 @@
 {{- if .Site.Params.metas }}
   {{ partial "meta.html" .Site.Params.metas }}
 {{- end }}
+{{- if .Site.Params.ga }}
+  {{ partial "ga.html" .Site.Params.ga }}
+{{- end }}
 <body>
 
 <header class="icons">
