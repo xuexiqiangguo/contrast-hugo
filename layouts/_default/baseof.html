@@ -51,7 +51,9 @@
 </header>
 
 {{- block "main" . }}{{- end }}
-
+{{- if .Site.Params.footerjs }}
+    {{ partial "footerjs.html" .Site.Params.footerjs }}
+{{- end }}
 </body>
 
 </html>
